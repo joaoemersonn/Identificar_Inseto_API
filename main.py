@@ -14,9 +14,10 @@ def upload_file():
     f = request.files['the_file']
     f.save('./uploads/%s' % f.filename)
 
-    #codigo aqui!
-    #O retorno pode ser um JSON
+    # codigo aqui!
+    # O retorno pode ser um JSON!
     return "OK"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
